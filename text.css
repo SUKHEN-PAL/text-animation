@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+}
+
+#h1{
+    width: 200px;
+    height: 150px;
+    border: 2px solid black;
+    justify-content: center;
+    margin-left: 100px;
+    margin-top: 100px;
+    background-color: black;
+    text-align: center;
+    padding-top: 15px;
+    color: white;
+}
+#life{
+    background-color: red;
+    animation: life 2s linear infinite;
+}
+
+@keyframes life{
+
+    0%{
+        opacity: 0;
+        transform: rotateX(0deg);
+    }
+
+    100%{
+        opacity: 1;
+        transform: rotateX(50deg);
+        
+    }
+}
+
+#div2{
+    width: 200px;
+    height: 150px;
+    border: 2px solid black;
+    text-align: center;
+    padding-top: 12px;
+    margin-top: 100px;
+    margin-left: 140px;
+    background-color: blue;
+    color: white;
+   
+}
+#work{
+    background-color: black;
+    border: 2px solid black;
+    
+    animation: work 2s linear infinite;
+}
+
+@keyframes work{
+    0%{
+        opacity: 0;
+        transform: rotateY(0deg);
+    }
+
+    100%{
+        opacity: 1;
+        transform: rotateY(45deg);
+        border-radius: 20px;
+        
+    }
+}
+
+
+#div3{
+    width: 250px;
+    height: 120px;
+    border: 2px solid black;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 155px;
+    background-color: red;
+    color: white;
+}
+
+#div3 > #everything{
+    background-color: black;
+    animation: eve linear 2s infinite;
+}
+
+@keyframes eve{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: .8;
+        color:yellow;
+       
+    }
+}
